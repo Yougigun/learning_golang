@@ -23,7 +23,7 @@ func main() {
 
 	// Get the memory size of the slice header on the stack
 	headerSize := unsafe.Sizeof(s)
-	fmt.Printf("Slice value size on stack: %d bytes\n", headerSize)
+	fmt.Printf("Slice memory size on stack: %d bytes\n", headerSize)
 
 	// enough capacity to append 3 more elements, no need to allocate new memory
 	s = append(s, 3, 4, 5)
